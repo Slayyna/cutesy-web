@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorated Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        /* General Page Styling */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(245, 163, 195); /* Keep the original background color */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            color: #17a3ef;
+        }
+
+        /* Heart Styling */
+        @keyframes floatHearts {
+            from {
+                transform: translateY(100vh) translateX(0);
+                opacity: 1;
+            }
+            to {
+                transform: translateY(-10vh) translateX(10px);
+                opacity: 0;
+            }
+        }
+
+        .heart {
+            position: fixed;
+            font-size: 2rem;
+            color: #ff6b81;
+            animation: floatHearts 5s linear infinite;
+        }
+
+        /* Content Box Styling */
+        .content-box {
+            margin: 10% auto;
+            padding: 20px;
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #17a3ef;
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: xx-large;
+            color: #17a3ef;
+        }
+
+        .gif-embed {
+            width: 20%;
+            margin: 20px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Floating Hearts -->
+    <script>
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart');
+            heart.innerHTML = '❤';
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = Math.random() * 3 + 3 + 's';
+            document.body.appendChild(heart);
+
+            setTimeout(() => heart.remove(), 5000);
+        }
+
+        setInterval(createHeart, 300); // Create a new heart every 300ms
+    </script>
+
+    <!-- Content Box with Title and Text -->
+    <div class="content-box">
+         <!-- GIF Embeds -->
+         <div class="gif-embed">
+            <div class="tenor-gif-embed" data-postid="4787819987748305080" data-share-method="host" data-aspect-ratio="1.1267" data-width="300%">
+                <a href="https://tenor.com/view/dance-done-with-work-happy-dance-victory-dance-idgaf-gif-4787819987748305080">Dance Done With Work GIF</a>
+                from <a href="https://tenor.com/search/dance-gifs">Dance GIFs</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+        <h1 style="font-style: oblique;">Yayy!! LET'S GO!</h1>
+        <p style="font-style: italic;">Now you're officially my baby so I expect you to support my delulu mind and just accept that I'm perfect. Just kidding!! Come so I can give you kisses!! Mwahhh!!</p>
+        
+
+        <div class="gif-embed">
+            <div class="tenor-gif-embed" data-postid="2682474298774342048" data-share-method="host" data-aspect-ratio="1.2029" data-width="300%">
+                <a href="https://tenor.com/view/muah-kiss-love-bear-mocha-and-bear-gif-2682474298774342048">Muah Kiss GIF</a>
+                from <a href="https://tenor.com/search/muah-gifs">Muah GIFs</a>
+            </div>
+            <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+        </div>
+    </div>
+
+</body>
+</html>
+        
+        
+        
+        
+       
+        
+        
+        
+        
+        
+        
+        
+ 
